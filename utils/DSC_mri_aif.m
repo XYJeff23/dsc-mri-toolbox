@@ -196,7 +196,7 @@ end
 ROI=ROI.*maschera; % Dei voxel della ROI mantengo solo quelli presenti anche nella maschera
 ROIiniziale=ROI;
 
-xROI=centro(1)-semiasseB:0.01:centro+semiasseB;
+xROI=centro(1)-semiasseB:0.01:centro(1)+semiasseB;
 nL=length(xROI);
 xROI(2*nL)=0;
 yROI=zeros(1,2*nL);
